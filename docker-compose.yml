@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    ports:
+      - "8001:8080"
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    ports:
+      - "8002:8080"
+    volumes:
+      - ./reference.yaml:/reference.yaml
+    environment:
+      SWAGGER_JSON: / reference.yaml
