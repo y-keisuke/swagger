@@ -8,4 +8,5 @@ swaggerを使用したAPIリファレンス
 3. localhost:8081でswagger-editorが、localhost:8082でswagger-uiが起動することを確認する。
 4. swagger-editorでfileを編集する。
 5. 編集したファイル内容を`reference.yaml`に記載する。
-6. 4と5を繰り返す。
+6. swagger-uiで`reference.yaml`に記載した内容が表示される。
+7. 4と6を繰り返す。
